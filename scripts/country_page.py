@@ -26,6 +26,15 @@ TEMPLATE_HTML = '''
 -->
 <html>
 	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-142138420-1"></script>
+		<script>
+  			window.dataLayer = window.dataLayer || [];
+  			function gtag(){dataLayer.push(arguments);}
+  				gtag('js', new Date());
+  			gtag('config', 'UA-142138420-1');
+		</script>
+			
 		<title>{country_low}</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
