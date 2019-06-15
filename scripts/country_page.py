@@ -1,9 +1,9 @@
 import os
 
-#country = 'morroco'
-#FULL_DIR = r'C:\xampp\htdocs\images\fulls\morroco'
-#THUMBS_DIR = r'C:\xampp\htdocs\images\thumbs\morroco'
-#HTML_DIR = r'C:\xampp\htdocs\countries'
+country = 'azerbaijan'
+FULL_DIR = r'''C:\xampp\htdocs\travelmatic\images\fulls\{c}'''.format(c=country)
+THUMBS_DIR = r'''C:\xampp\htdocs\travelmatic\images\thumbs\{c}'''.format(c=country)
+HTML_DIR = r'C:\xampp\htdocs\travelmatic\countries'
 
 ## Create articles
 articles = ''
@@ -30,7 +30,7 @@ TEMPLATE_HTML = '''
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-142138420-1"></script>
 		<script>
   			window.dataLayer = window.dataLayer || [];
-  			function gtag(){dataLayer.push(arguments);}
+  			function gtag(){{dataLayer.push(arguments);}}
   				gtag('js', new Date());
   			gtag('config', 'UA-142138420-1');
 		</script>
@@ -59,8 +59,7 @@ TEMPLATE_HTML = '''
 				</section>
 				<!-- Footer -->
 				<footer id="footer">
-					<ul class="icons">
-						<li><a href="https://twitter.com/terramaticspace" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+					<ul class="icons">						
 						<li><a href="https://www.instagram.com/terramaticspace" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
 						<li><a href="https://github.com/jsalcal" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
 						<li><a href="https://www.linkedin.com/in/jsalcal" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>

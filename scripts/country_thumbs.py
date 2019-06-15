@@ -1,9 +1,14 @@
 import os
 from PIL import Image
 
-SRC_DIR = r'C:\xampp\htdocs\travelmatic\images\src\aruba'
-FULL_DIR = r'C:\xampp\htdocs\travelmatic\images\fulls\aruba'
-THUMBS_DIR = r'C:\xampp\htdocs\travelmatic\images\thumbs\aruba'
+SRC_DIR = r'C:\xampp\htdocs\travelmatic\images\src\azerbaijan'
+FULL_DIR = r'C:\xampp\htdocs\travelmatic\images\fulls\azerbaijan'
+THUMBS_DIR = r'C:\xampp\htdocs\travelmatic\images\thumbs\azerbaijan'
+
+if not os.path.exists(FULL_DIR):
+    os.makedirs(FULL_DIR)
+if not os.path.exists(THUMBS_DIR):
+    os.makedirs(THUMBS_DIR)
 
 ## Create thumbnails
 xsW = 256
