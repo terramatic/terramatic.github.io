@@ -1,7 +1,11 @@
 import os
+import sys
 from PIL import Image
 
-country = 'switzerland'
+if len(sys.argv) != 2:
+	print 'Please input country'
+	exit()
+country = sys.argv[1]
 SRC_DIR = r'C:\xampp\htdocs\travelmatic\images\src\{}'.format(country)
 FULL_DIR = r'C:\xampp\htdocs\travelmatic\images\fulls\{}'.format(country)
 THUMBS_DIR = r'C:\xampp\htdocs\travelmatic\images\thumbs\{}'.format(country)
