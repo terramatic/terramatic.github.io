@@ -1,6 +1,6 @@
 import os
 
-country = 'chile'
+country = 'switzerland'
 FULL_DIR = r'''C:\xampp\htdocs\travelmatic\images\fulls\{c}'''.format(c=country)
 THUMBS_DIR = r'''C:\xampp\htdocs\travelmatic\images\thumbs\{c}'''.format(c=country)
 HTML_DIR = r'C:\xampp\htdocs\travelmatic\countries'

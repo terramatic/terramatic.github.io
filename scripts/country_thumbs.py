@@ -1,9 +1,10 @@
 import os
 from PIL import Image
 
-SRC_DIR = r'C:\xampp\htdocs\travelmatic\images\src\chile'
-FULL_DIR = r'C:\xampp\htdocs\travelmatic\images\fulls\chile'
-THUMBS_DIR = r'C:\xampp\htdocs\travelmatic\images\thumbs\chile'
+country = 'switzerland'
+SRC_DIR = r'C:\xampp\htdocs\travelmatic\images\src\{}'.format(country)
+FULL_DIR = r'C:\xampp\htdocs\travelmatic\images\fulls\{}'.format(country)
+THUMBS_DIR = r'C:\xampp\htdocs\travelmatic\images\thumbs\{}'.format(country)
 
 if not os.path.exists(FULL_DIR):
     os.makedirs(FULL_DIR)
