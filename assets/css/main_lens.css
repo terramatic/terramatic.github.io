@@ -432,7 +432,7 @@ input, select, textarea {
 
 		select option {
 			color: #555;
-			background: #fff;
+			background: rgba(36, 41, 67, 0.925);
 		}
 
 		select:focus::-ms-value {
@@ -881,7 +881,7 @@ input, select, textarea {
 				-ms-transition: opacity 0.5s ease, visibility 0.5s;
 				transition: opacity 0.5s ease, visibility 0.5s;
 				width: 100%;
-				background: #fff;
+				background: rgba(36, 41, 67, 0.925);
 				text-align: center;
 			}
 
