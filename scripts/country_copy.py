@@ -8,13 +8,13 @@ if len(sys.argv) != 2:
 	exit()
 country = sys.argv[1]
 
-ORI_DIR = r'D:\Photos\Hyderabad 2017'
+ORI_DIR = r'D:\Photos\Kuwait_2018'
 SRC_DIR = r'C:\xampp\htdocs\travelmatic\images\src\{}'.format(country)
 if not os.path.exists(SRC_DIR):
     os.makedirs(SRC_DIR)
 
 ## Copy selected images from src to SRC_DIR
-sel_imgs = ['P1250922', 'P1250924', 'P1250958', 'P1250984', '126085', '1260165', '1260172', '1260195', '1260217', '1260218', '', '', '', '', '', '', '', '', '', '', '', '']
+sel_imgs = ['2748', '2752', '2759', '2795', '2842', '2859', '2890', '2899', '2914', '2943', '2998', '2995', '', '', '', '', '', '', '', '', '', '']
 for im in sel_imgs:
 	if im == '': continue
 	pattern = '{d}/*{a}*'.format(d=ORI_DIR, a=im)	
