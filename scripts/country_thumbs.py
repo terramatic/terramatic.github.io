@@ -19,9 +19,14 @@ if not os.path.exists(THUMBS_DIR):
 xsW = 256
 xlW = 1920
 
+## Watermark stuff
+logo_path = r'C:\xampp\htdocs\travelmatic\images\Logo_350_150.png' 
+watermark = Image.open(logo_path)
+
 print SRC_DIR
 for f in os.listdir(SRC_DIR):
 	# Filenames
+	outfileXL = os.path.join(FULL_DIR, f)
 	outfileXL = os.path.join(FULL_DIR, f)
 	outfileXS = os.path.join(THUMBS_DIR, f)
 	
@@ -41,4 +46,6 @@ for f in os.listdir(SRC_DIR):
 	# XL
 	print('thumbnail {} to {}'.format(infile, outfileXL))	
 	img = im.resize((xlW, xlH), Image.ANTIALIAS)
+	logo_position = (xlW - 370, xlH - 150)
+	img.paste(watermark, logo_position, watermark)
 	img.save(outfileXL, "JPEG")	
