@@ -30,7 +30,7 @@ function pageLoad() {
 			"related": 1
 		}
 	};
-
+	
     var container = document.getElementById( "globalArea" );
     var controller = new GIO.Controller( container );
     controller.configure(config);
