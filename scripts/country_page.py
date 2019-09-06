@@ -5,9 +5,9 @@ if len(sys.argv) != 2:
 	print 'Please input country'
 	exit()
 country = sys.argv[1]
-FULL_DIR = r'''C:\xampp\htdocs\travelmatic\images\fulls\{c}'''.format(c=country)
-THUMBS_DIR = r'''C:\xampp\htdocs\travelmatic\images\thumbs\{c}'''.format(c=country)
-HTML_DIR = r'C:\xampp\htdocs\travelmatic\countries'
+FULL_DIR = r'''/mnt/c/xampp/htdocs/travelmatic/images/fulls/{c}'''.format(c=country)
+THUMBS_DIR = r'''/mnt/c/xampp/htdocs/travelmatic/images/thumbs/{c}'''.format(c=country)
+HTML_DIR = r'/mnt/c/xampp/htdocs/travelmatic/countries'
 
 ## Create articles
 articles = ''

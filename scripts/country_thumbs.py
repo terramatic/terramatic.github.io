@@ -6,9 +6,9 @@ if len(sys.argv) != 2:
 	print 'Please input country'
 	exit()
 country = sys.argv[1]
-SRC_DIR = r'C:\xampp\htdocs\travelmatic\images\src\{}'.format(country)
-FULL_DIR = r'C:\xampp\htdocs\travelmatic\images\fulls\{}'.format(country)
-THUMBS_DIR = r'C:\xampp\htdocs\travelmatic\images\thumbs\{}'.format(country)
+SRC_DIR = r'/mnt/c/xampp/htdocs/travelmatic/images/src/{}'.format(country)
+FULL_DIR = r'/mnt/c/xampp/htdocs/travelmatic/images/fulls/{}'.format(country)
+THUMBS_DIR = r'/mnt/c/xampp/htdocs/travelmatic/images/thumbs/{}'.format(country)
 
 if not os.path.exists(FULL_DIR):
     os.makedirs(FULL_DIR)
@@ -20,7 +20,7 @@ xsW = 256
 xlW = 1920
 
 ## Watermark stuff
-logo_path = r'C:\xampp\htdocs\travelmatic\images\Logo_350_150.png' 
+logo_path = r'/mnt/c/xampp/htdocs/travelmatic/images/Logo_350_150.png' 
 watermark = Image.open(logo_path)
 
 print SRC_DIR
