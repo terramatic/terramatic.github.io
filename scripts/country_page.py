@@ -2,7 +2,7 @@ import os
 import sys
 
 if len(sys.argv) != 2:
-	print 'Please input country'
+	print('Please input country')
 	exit()
 country = sys.argv[1]
 FULL_DIR = r'''/mnt/c/xampp/htdocs/travelmatic/images/fulls/{c}'''.format(c=country)

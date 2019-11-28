@@ -3,7 +3,7 @@ import sys
 from PIL import Image
 
 if len(sys.argv) != 2:
-	print 'Please input country'
+	print ('Please input country')
 	exit()
 country = sys.argv[1]
 SRC_DIR = r'/mnt/c/xampp/htdocs/travelmatic/images/src/{}'.format(country)
@@ -23,7 +23,7 @@ xlW = 1920
 logo_path = r'/mnt/c/xampp/htdocs/travelmatic/images/Logo_350_150.png' 
 watermark = Image.open(logo_path)
 
-print SRC_DIR
+print (SRC_DIR)
 for f in os.listdir(SRC_DIR):
 	# Filenames
 	outfileXL = os.path.join(FULL_DIR, f)
